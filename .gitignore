@@ -1,0 +1,37 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# AI model weights and downloaded models
+*.pth
+*.pt
+*.onnx
+*.gguf
+*.safetensors
+models/
+EOF
